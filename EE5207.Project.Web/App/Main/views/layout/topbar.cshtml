@@ -1,0 +1,55 @@
+﻿
+<nav class="navbar" ng-controller="app.views.layout.topbar as vm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="fa fa-book"></i> Shilpa</a>
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        @*<i class="fa fa-bell"></i>*@
+                        Notifications <span ng-hide="vm.userNotifications.length == 0" class="badge badge-danger">{{vm.userNotifications.length}}</span>
+                    </a>
+                    <ul class="dropdown-menu pre-scrollable" style="max-width:400px;">
+                        <li ng-repeat="userNotification in vm.userNotifications">
+                            <a>
+                                {{userNotification.notification.data.message}} <br />
+                                <span><small>{{userNotification.notification.creationTime | date : 'dd/MM/yyyy h:mm a'}}</small></span>
+                            </a>
+                        </li>
+                        <li ng-hide="vm.userNotifications.length > 0">
+                            <a style="color:gray;">
+                                <small>No Notifications</small>
+                            </a>
+                        </li>
+                        @*<li>
+                                <a>
+                                    This is a notification <br />
+                                    <span><small>2019-12-10 5.17 AM</small></span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a>
+                                    This is another notification <br />
+                                    <span><small>2019-12-10 5.18 AM</small></span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a>
+                                    A notification here<br />
+                                    <span><small>2019-12-10 5.19 AM</small></span>
+                                </a>
+                            </li>*@
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

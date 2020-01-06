@@ -1,0 +1,52 @@
+﻿<form id="frm_detail_publication" name="publicationDetailForm" novalidate>
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="vm.cancel()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">
+            <span>Publication Details</span>
+        </h4>
+    </div>
+    <div class="modal-body">
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <label class="form-label">@L("Name")</label>
+                    <div class="form-line">
+                        <input class="form-control" type="text" name="Name" ng-model="vm.publication.name" readonly>
+                        @*<label class="form-label">@L("Name")</label>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <label class="form-label">Description</label>
+                    <div class="form-line">
+                        <input class="form-control" type="text" name="Description" ng-model="vm.publication.description" readonly>
+                        @*<label class="form-label">Description</label>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <label class="form-label">File Path</label>
+                    <div class="form-line">
+                        <input class="form-control" type="text" name="FilePath" ng-model="vm.publication.filePath" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" ng-click="vm.cancel()">
+            Close
+        </button>
+        <button type="button" class="btn btn-primary waves-effect">
+            <a href="~/{{vm.publication.filePath}}" ng-click="vm.download(vm.publication)" download style="text-decoration: none;color:white">Download</a>
+        </button>
+    </div>
+</form>

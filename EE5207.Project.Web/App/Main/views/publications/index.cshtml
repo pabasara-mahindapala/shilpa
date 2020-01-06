@@ -1,0 +1,66 @@
+﻿<div class="row clearfix" ng-controller="app.views.publications.index as vm">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card main-content">
+            <div class="header">
+                <h2>
+                    Lecture Materials
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <i class="fa fa-spin fa-spinner" ng-if="vm.isTableLoading"></i>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);" class="waves-effect waves-block()" ng-click="vm.refresh();"><i class="material-icons">refresh</i> @L("Refresh")</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body table-responsive">
+                <!-- ******************************************************** -->
+                <input type="text" 
+                       ng-model="search"
+                       placeholder="Search..."
+                       class="form-control"
+                       width="50"/>
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>@L("Name")</th>
+                            <th>Added Date</th>
+                            <th>No. of Downloads</th>
+                            <th>Download</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="publication in vm.publications | filter : search">
+                            <td>{{publication.name}}</td>
+                            <td>{{publication.creationTime  | date : 'dd/MM/yyyy'}}</td>
+                            <td>{{publication.downloads}}</td>
+                            <td><a href="~/{{publication.filePath}}" class="waves-effect waves-block" ng-click="vm.download(publication)" download><i class="material-icons">get_app</i></a></td>
+
+                            <td class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);" class="waves-effect waves-block" ng-click="vm.openPublicationDetailModal(publication)"><i class="material-icons">description</i>Details</a></li>
+                                    @if (IsGranted("Delete"))
+                                    {
+                                        <li><a href="javascript:void(0);" class="waves-effect waves-block" ng-click="vm.delete(publication)"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                    }
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- ******************************************************** -->
+                <button type="button" data-toggle="modal" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" ng-click="vm.openPublicationCreationModal()">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
