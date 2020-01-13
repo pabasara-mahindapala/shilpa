@@ -15,7 +15,7 @@ Using the web application, parents and students can search for teachers in diffe
 
 Group 14
 
-MAHINDAPALA D. P. P. EG/2016/2916           @pabasara-mahindapala
+MAHINDAPALA D. P. P. EG/2016/2916           
 
 BANDULASENA B. N. M. EG/2016/2829
 
