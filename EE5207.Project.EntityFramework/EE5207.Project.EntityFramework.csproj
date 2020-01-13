@@ -247,6 +247,10 @@
     <Compile Include="Migrations\201912170840241_Added_Attendance_3.Designer.cs">
       <DependentUpon>201912170840241_Added_Attendance_3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001131031216_Added-Enrollments.cs" />
+    <Compile Include="Migrations\202001131031216_Added-Enrollments.Designer.cs">
+      <DependentUpon>202001131031216_Added-Enrollments.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectDataModule.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.Designer.cs">
@@ -339,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912170840241_Added_Attendance_3.resx">
       <DependentUpon>201912170840241_Added_Attendance_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001131031216_Added-Enrollments.resx">
+      <DependentUpon>202001131031216_Added-Enrollments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
