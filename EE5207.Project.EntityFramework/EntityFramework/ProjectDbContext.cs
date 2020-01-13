@@ -5,6 +5,7 @@ using EE5207.Project.Attendances;
 using EE5207.Project.Authorization.Roles;
 using EE5207.Project.Authorization.Users;
 using EE5207.Project.Courses;
+using EE5207.Project.Enrollments;
 using EE5207.Project.MultiTenancy;
 using EE5207.Project.Publications;
 
@@ -16,6 +17,7 @@ namespace EE5207.Project.EntityFramework
         public virtual IDbSet<Publication> Publications { get; set; }
         public virtual IDbSet<Course> Courses { get; set; }
         public virtual IDbSet<Attendance> Attendances { get; set; }
+        public virtual IDbSet<Enrollment> Enrollments { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

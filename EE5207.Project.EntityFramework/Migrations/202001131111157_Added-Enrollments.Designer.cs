@@ -13,7 +13,7 @@ namespace EE5207.Project.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202001131031216_Added-Enrollments"; }
+            get { return "202001131111157_Added-Enrollments"; }
         }
         
         string IMigrationMetadata.Source

@@ -19722,3 +19722,122 @@ DEBUG 2020-01-06 17:22:20,403 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 WARN  2020-01-06 17:22:52,154 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
 WARN  2020-01-06 17:23:04,161 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
 WARN  2020-01-06 17:23:21,268 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
+DEBUG 2020-01-13 16:10:39,018 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-13 16:10:39,033 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EE5207.Project.Web.ProjectWebModule, EE5207.Project.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EE5207.Project.ProjectDataModule, EE5207.Project.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EE5207.Project.ProjectCoreModule, EE5207.Project.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EE5207.Project.ProjectApplicationModule, EE5207.Project.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EE5207.Project.Api.ProjectWebApiModule, EE5207.Project.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:39,065 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-01-13 16:10:39,518 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-13 16:10:39,518 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-13 16:10:39,518 [1    ] o.Configuration.LanguageManagementConfig - Converted Project (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-13 16:10:39,518 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-13 16:10:40,033 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: EE5207.Project.EntityFramework.ProjectDbContext, EE5207.Project.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-13 16:10:45,502 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-13 16:10:45,674 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-13 16:10:45,690 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-13 16:10:45,706 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Project
+DEBUG 2020-01-13 16:10:45,721 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-13 16:10:45,971 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-01-13 16:10:46,159 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 22 classes define auto mapping attributes
+DEBUG 2020-01-13 16:10:46,159 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Users.Dto.AttendanceDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Users.Dto.CreateUserDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Users.Dto.UpdateUserDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Users.Dto.UserDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Roles.Dto.PermissionDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Roles.Dto.RoleDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Publications.Dto.CreatePublicationDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Publications.Dto.PublicationDetailDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Publications.Dto.PublicationListDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Publications.Dto.UpdatePublicationDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-13 16:10:46,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Courses.Dto.CourseDetailDto
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Courses.Dto.CourseListDto
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Courses.Dto.CreateCourseDto
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Courses.Dto.UpdateCourseDto
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-13 16:10:46,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - EE5207.Project.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-13 16:10:50,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Publications.IPublicationAppService' with service name 'app/publication'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-13 16:10:50,534 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EE5207.Project.Courses.ICourseAppService' with service name 'app/course'.
+WARN  2020-01-13 16:11:01,816 [7    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2020-01-13 16:11:13,849 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Teachers' in localization source 'Project'!
+WARN  2020-01-13 16:11:32,316 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'LectureMaterials' in localization source 'Project'!
+WARN  2020-01-13 16:11:32,333 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teachers' in localization source 'Project'!
+DEBUG 2020-01-13 16:11:34,580 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e6faa2e5-310b-4ec9-9141-03c7d3213444","IpAddress":"192.168.56.1","TenantId":null,"UserId":1,"ConnectTime":"2020-01-13T16:11:34.5603156+05:30","Properties":{}}
+DEBUG 2020-01-13 16:11:34,784 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e6faa2e5-310b-4ec9-9141-03c7d3213444
+WARN  2020-01-13 16:11:37,729 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'Description' in localization source 'Project'!
+WARN  2020-01-13 16:12:46,478 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
+WARN  2020-01-13 16:19:51,165 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
+WARN  2020-01-13 16:20:03,243 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'Project'!
