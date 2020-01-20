@@ -16,7 +16,7 @@ namespace EE5207.Project.Enrollments
 
         public virtual Guid CourseId { get; set; }
 
-        public static Enrollment Create(int tenantId, long studentId, Guid courseId)//add constructer
+        public static Enrollment Create(int tenantId, long studentId, Guid courseId)    //add constructer
         {
             var @enrollment = new Enrollment
             {
