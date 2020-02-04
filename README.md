@@ -1,4 +1,4 @@
-# shilpa
+# Shilpa Web Application
 
 ## About this website
 
@@ -16,12 +16,12 @@ Using the web application, parents and students can search for teachers in diffe
 ### Group 14
 
 
-MAHINDAPALA D. P. P. EG/2016/2916           
+MAHINDAPALA D. P. P. - EG/2016/2916           
 
-BANDULASENA B. N. M. EG/2016/2829
+BANDULASENA B. N. M. - EG/2016/2829
 
-GUNAWARDENA A. A. S. EG/2016/2859
+GUNAWARDENA A. A. S. - EG/2016/2859
 
-DINESHIKA W. M. R. EG/2016/2846
+DINESHIKA W. M. R. - EG/2016/2846
 
-RATHNAYAKA R. M. P. M. EG/2016/2963
+RATHNAYAKA R. M. P. M. - EG/2016/2963
