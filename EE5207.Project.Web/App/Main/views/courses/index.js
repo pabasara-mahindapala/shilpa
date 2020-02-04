@@ -1,7 +1,7 @@
 ﻿(function () {
     angular.module('app').controller('app.views.courses.index', [
-        '$scope', '$timeout', '$uibModal', 'abp.services.app.course',
-        function ($scope, $timeout, $uibModal, courseService) {
+        '$scope', '$timeout', '$uibModal', 'abp.services.app.course', 'appSession',
+        function ($scope, $timeout, $uibModal, courseService, appSession) {
             var vm = this;
 
             vm.courses = [];
@@ -63,6 +63,13 @@
                                 });
                         }
                     });
+            };
+
+
+
+            vm.enrollStudent = function (course) {
+                courseService.enrollStudent(appSession.user.id, course.id);
+                abp.notify.success("You are enrolled in " + course.name + "!");
             };
 
 

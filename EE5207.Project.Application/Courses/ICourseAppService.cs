@@ -20,5 +20,9 @@ namespace EE5207.Project.Courses
         Task Delete(EntityDto<Guid> input);
 
         Task Update(UpdateCourseDto input);
+
+        Task EnrollStudent(long StudentId, Guid CourseId);
+
+        Task<List<string>> GetStudents(Guid courseId);
     }
 }

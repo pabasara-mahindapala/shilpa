@@ -28,6 +28,16 @@
                 </div>
             </div>
         </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <label class="form-label">Enrolled Students</label>
+                    <div ng-repeat="student in vm.students">
+                        <p>{{student}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default waves-effect" ng-click="vm.cancel()">

@@ -7,17 +7,23 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.UI;
+using EE5207.Project.Authorization.Users;
 using EE5207.Project.Courses.Dto;
+using EE5207.Project.Enrollments;
 
 namespace EE5207.Project.Courses
 {
     public class CourseAppService : ProjectAppServiceBase, ICourseAppService
     {
         private readonly IRepository<Course, Guid> _courseRepository;
+        private readonly IRepository<Enrollment, Guid> _enrollmentRepository;
+        private readonly IRepository<User, long> _userRepository;
 
-        public CourseAppService(IRepository<Course, Guid> courseRepository)
+        public CourseAppService(IRepository<Course, Guid> courseRepository, IRepository<Enrollment, Guid> enrollmentRepository, IRepository<User, long> userRepository)
         {
             _courseRepository = courseRepository;
+            _enrollmentRepository = enrollmentRepository;
+            _userRepository = userRepository;
         }
 
         public async Task<ListResultDto<CourseListDto>> GetAll()
@@ -60,5 +66,21 @@ namespace EE5207.Project.Courses
             await _courseRepository.UpdateAsync(@course);
         }
 
+        public async Task EnrollStudent(long StudentId, Guid CourseId)
+        {
+            var @enrollment = Enrollment.Create(1, StudentId, CourseId);
+
+            await _enrollmentRepository.InsertAsync(@enrollment);
+        }
+
+        public async Task<List<string>> GetStudents(Guid courseId)
+        {
+            var students = (from enrollment in _enrollmentRepository.GetAll()
+                            join student in _userRepository.GetAll() on enrollment.StudentId equals student.Id
+                            where enrollment.CourseId == courseId
+                            select student.UserName).Distinct().ToList();
+
+            return new List<string>(students);
+        }
     }
 }
