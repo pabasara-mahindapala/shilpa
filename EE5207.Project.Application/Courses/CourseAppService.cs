@@ -82,5 +82,18 @@ namespace EE5207.Project.Courses
 
             return new List<string>(students);
         }
+
+        public async Task MarkAttendance(UpdateCourseDto input)
+        {
+            var conductedDays = (from coursetable in _courseRepository.GetAll()
+                                 where coursetable.Id == input.Id
+                                 select coursetable.ConductedDays).ToList();
+
+            conductedDays[0]++;
+            input.ConductedDays = conductedDays[0];
+            var @course = input.MapTo<Course>();
+            await _courseRepository.UpdateAsync(@course);
+
+        }
     }
 }

@@ -24,5 +24,7 @@ namespace EE5207.Project.Courses
         Task EnrollStudent(long StudentId, Guid CourseId);
 
         Task<List<string>> GetStudents(Guid courseId);
+
+        Task MarkAttendance(UpdateCourseDto input);
     }
 }

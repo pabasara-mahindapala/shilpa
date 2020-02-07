@@ -65,6 +65,20 @@
                     });
             };
 
+            vm.markAttendance = function (course) {
+                abp.message.confirm(
+                    "Start course '" + course.name + "'?",
+                    function (result) {
+                        if (result) {
+                            courseService.markAttendance(course)
+                                .then(function () {
+                                    abp.notify.info("Started course: " + course.name);
+                                    getCourses();
+                                });
+                        }
+                    });
+            };
+
 
 
             vm.enrollStudent = function (course) {
