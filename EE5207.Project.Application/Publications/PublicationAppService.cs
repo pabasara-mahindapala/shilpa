@@ -28,6 +28,15 @@ namespace EE5207.Project.Publications
         {
             var @publication = Publication.Create(1, input.Name, input.Description, input.FilePath, input.Downloads);
 
+            var user = await UserManager.GetUserByIdAsync(3);
+
+            await _notificationPublisher.PublishAsync(
+                notificationName: "PublicationNotification",
+                data: new MessageNotificationData("New Publication available : "+input.Name),
+                severity: NotificationSeverity.Success,
+                userIds: new[] { user.ToUserIdentifier() }
+            );
+
             await _publicationRepository.InsertAsync(@publication);
         }
 
@@ -50,14 +59,14 @@ namespace EE5207.Project.Publications
             var publications = await _publicationRepository
                 .GetAllListAsync();
 
-            var user = await UserManager.GetUserByIdAsync(3);
+            //var user = await UserManager.GetUserByIdAsync(3);
 
-            await _notificationPublisher.PublishAsync(
-                notificationName: "NewsNotification",
-                data: new MessageNotificationData("And that's the way the news goes"),
-                severity: NotificationSeverity.Success,
-                userIds: new[] { user.ToUserIdentifier() }
-            );
+            //await _notificationPublisher.PublishAsync(
+            //    notificationName: "ClassNotification",
+            //    data: new MessageNotificationData("No chemistry class this week"),
+            //    severity: NotificationSeverity.Success,
+            //    userIds: new[] { user.ToUserIdentifier() }
+            //);
 
             return new ListResultDto<PublicationListDto>(publications.MapTo<List<PublicationListDto>>());
         }

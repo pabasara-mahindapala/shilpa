@@ -39,9 +39,28 @@
             </div>
         </div>
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default waves-effect" ng-click="vm.cancel()">
-            Close
-        </button>
+    <div class="modal-body">
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <label class="form-label">Student</label>
+                    <div class="form-line">
+                        <input class="form-control" type="text" name="Name" ng-model="vm.studentId">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" ng-click="vm.markStudent(vm.studentId)">
+            Mark
+        </button>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default waves-effect" ng-click="vm.cancel()">
+                Close
+            </button>
+        </div>
+
 </form>

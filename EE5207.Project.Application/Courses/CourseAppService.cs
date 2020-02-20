@@ -7,6 +7,7 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.UI;
+using EE5207.Project.Attendances;
 using EE5207.Project.Authorization.Users;
 using EE5207.Project.Courses.Dto;
 using EE5207.Project.Enrollments;
@@ -18,12 +19,14 @@ namespace EE5207.Project.Courses
         private readonly IRepository<Course, Guid> _courseRepository;
         private readonly IRepository<Enrollment, Guid> _enrollmentRepository;
         private readonly IRepository<User, long> _userRepository;
+        private readonly IRepository<Attendance, Guid> _attendanceRepository;
 
-        public CourseAppService(IRepository<Course, Guid> courseRepository, IRepository<Enrollment, Guid> enrollmentRepository, IRepository<User, long> userRepository)
+        public CourseAppService(IRepository<Course, Guid> courseRepository, IRepository<Enrollment, Guid> enrollmentRepository, IRepository<User, long> userRepository, IRepository<Attendance, Guid> attendanceRepository)
         {
             _courseRepository = courseRepository;
             _enrollmentRepository = enrollmentRepository;
             _userRepository = userRepository;
+            _attendanceRepository = attendanceRepository;
         }
 
         public async Task<ListResultDto<CourseListDto>> GetAll()
@@ -55,6 +58,20 @@ namespace EE5207.Project.Courses
             return @course.MapTo<CourseDetailDto>();
         }
 
+        public async Task<UpdateAttendanceDto> GetAttendance(Guid id)
+        {
+            var attendance = await _attendanceRepository
+                .GetAsync(id);
+
+
+            if (attendance == null)
+            {
+                throw new UserFriendlyException("Could not find the attendance");
+            }
+
+            return attendance.MapTo<UpdateAttendanceDto>();
+        }
+
         public async Task Delete(EntityDto<Guid> input)
         {
             await _courseRepository.DeleteAsync(input.Id);
@@ -64,6 +81,12 @@ namespace EE5207.Project.Courses
         {
             var @course = input.MapTo<Course>();
             await _courseRepository.UpdateAsync(@course);
+        }
+
+        public async Task UpdateAttendance(UpdateAttendanceDto input)
+        {
+            var @attendance = input.MapTo<Attendance>();
+            await _attendanceRepository.UpdateAsync(@attendance);
         }
 
         public async Task EnrollStudent(long StudentId, Guid CourseId)
@@ -93,6 +116,17 @@ namespace EE5207.Project.Courses
             input.ConductedDays = conductedDays[0];
             var @course = input.MapTo<Course>();
             await _courseRepository.UpdateAsync(@course);
+
+        }
+
+        public async Task<Guid> MarkStudent(long StudentId, Guid CourseId)
+        {
+            var attendance = (from attendancetable in _attendanceRepository.GetAll()
+                              where attendancetable.StudentId == StudentId
+                              where attendancetable.CourseId == CourseId
+                              select attendancetable.Id).ToList();
+
+            return attendance[0];
 
         }
     }
