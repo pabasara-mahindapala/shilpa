@@ -6,6 +6,8 @@
 
             vm.courses = [];
 
+            vm.attendance = {};
+
             function getCourses() {
                 courseService.getAll({}).then(function (result) {
                     vm.courses = result.data.items;
@@ -51,6 +53,8 @@
                 });
             };
 
+            
+
             vm.delete = function (course) {
                 abp.message.confirm(
                     "Delete course '" + course.name + "'?",
@@ -63,6 +67,39 @@
                                 });
                         }
                     });
+            };
+
+            vm.markAttendance = function (course) {
+                abp.message.confirm(
+                    "Start course '" + course.name + "'?",
+                    function (result) {
+                        if (result) {
+                            courseService.markAttendance(course)
+                                .then(function () {
+                                    abp.notify.info("Started course: " + course.name);
+                                    getCourses();
+                                });
+                        }
+                    });
+            };
+
+            vm.markStudent = function () {
+                courseService.markStudent(3, "9D4DAC5C-3974-4C75-B3DB-87E1319EB06B")
+                    .then(function (resu) {
+                        courseService.getAttendance(resu.data)
+                            .then(function (res) {
+                                vm.attendance = res.data;
+                                console.log(vm.attendance);
+                                vm.attendance.presentDays++;
+                                console.log(vm.attendance);
+                                courseService.updateAttendance(vm.attendance)
+                                    .then(function (r) {
+                                        console.log(r);
+                                        abp.notify.success("Done!");
+                                    });
+                            });
+                    });
+
             };
 
 

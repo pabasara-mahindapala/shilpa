@@ -15,14 +15,22 @@ namespace EE5207.Project.Courses
 
         Task<CourseDetailDto> Get(EntityDto<Guid> input);
 
+        Task<UpdateAttendanceDto> GetAttendance(Guid id);
+
         Task Create(CreateCourseDto input);
 
         Task Delete(EntityDto<Guid> input);
 
         Task Update(UpdateCourseDto input);
 
+        Task UpdateAttendance(UpdateAttendanceDto input);
+
         Task EnrollStudent(long StudentId, Guid CourseId);
 
         Task<List<string>> GetStudents(Guid courseId);
+
+        Task MarkAttendance(UpdateCourseDto input);
+
+        Task<Guid> MarkStudent(long StudentId, Guid CourseId);
     }
 }

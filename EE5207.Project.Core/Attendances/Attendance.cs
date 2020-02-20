@@ -14,6 +14,8 @@ namespace EE5207.Project.Attendances
 
         public virtual int Percentage { get; set; }
 
+        public virtual int PresentDays { get; set; }
+
         public virtual long StudentId { get; set; }
 
         public virtual Guid CourseId { get; set; }
@@ -25,6 +27,7 @@ namespace EE5207.Project.Attendances
                 Id = Guid.NewGuid(),
                 TenantId = tenantId,
                 Percentage = percentage,
+                PresentDays = 0,
                 StudentId = studentId,
                 CourseId = courseId,
             };

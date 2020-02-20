@@ -251,6 +251,14 @@
     <Compile Include="Migrations\202001131111157_Added-Enrollments.Designer.cs">
       <DependentUpon>202001131111157_Added-Enrollments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002071850178_conducteddaysadded.cs" />
+    <Compile Include="Migrations\202002071850178_conducteddaysadded.Designer.cs">
+      <DependentUpon>202002071850178_conducteddaysadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002080235280_added_presentdays.cs" />
+    <Compile Include="Migrations\202002080235280_added_presentdays.Designer.cs">
+      <DependentUpon>202002080235280_added_presentdays.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectDataModule.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.Designer.cs">
@@ -346,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001131111157_Added-Enrollments.resx">
       <DependentUpon>202001131111157_Added-Enrollments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002071850178_conducteddaysadded.resx">
+      <DependentUpon>202002071850178_conducteddaysadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002080235280_added_presentdays.resx">
+      <DependentUpon>202002080235280_added_presentdays.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

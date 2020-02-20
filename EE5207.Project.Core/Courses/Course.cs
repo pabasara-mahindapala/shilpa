@@ -20,6 +20,8 @@ namespace EE5207.Project.Courses
 
         public virtual string Time { get; set; }
 
+        public virtual int ConductedDays { get; set; }
+
         public virtual long TeacherId { get; set; }
 
         public static Course Create(int tenantId, string name, string venue, string day, string time, long teacherId)//add constructer
@@ -32,6 +34,7 @@ namespace EE5207.Project.Courses
                 Venue = venue,
                 Day = day,
                 Time = time,
+                ConductedDays = 0,
                 TeacherId = teacherId
             };
 

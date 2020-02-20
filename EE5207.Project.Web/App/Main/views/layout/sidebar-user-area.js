@@ -11,9 +11,9 @@
                     return appSession.user.userName;
                 } else {
                     if (appSession.tenant) {
-                        return appSession.tenant.tenancyName + '\\' + appSession.user.userName;
+                        return appSession.tenant.tenancyName  + appSession.user.userName;
                     } else {
-                        return '.\\' + appSession.user.userName;
+                        return appSession.user.userName;
                     }
                 }
             };

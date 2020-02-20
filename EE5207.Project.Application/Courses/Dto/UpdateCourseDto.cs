@@ -19,6 +19,8 @@ namespace EE5207.Project.Courses.Dto
 
         public string Time { get; set; }
 
+        public int ConductedDays { get; set; }
+
         public long TeacherId { get; set; }
 
     }

@@ -215,6 +215,7 @@
     <Compile Include="Courses\Dto\CourseDetailDto.cs" />
     <Compile Include="Courses\Dto\CourseListDto.cs" />
     <Compile Include="Courses\Dto\CreateCourseDto.cs" />
+    <Compile Include="Courses\Dto\UpdateAttendanceDto.cs" />
     <Compile Include="Courses\Dto\UpdateCourseDto.cs" />
     <Compile Include="Courses\ICourseAppService.cs" />
     <Compile Include="ProjectApplicationModule.cs" />
