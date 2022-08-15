@@ -11,17 +11,3 @@ Using the web application, parents and students can search for teachers in diffe
     Entity Framework as ORM
     AngularJS as SPA framework
     Bootstrap as HTML/CSS framework
-
-
-### Group 14
-
-
-MAHINDAPALA D. P. P. - EG/2016/2916           
-
-BANDULASENA B. N. M. - EG/2016/2829
-
-GUNAWARDENA A. A. S. - EG/2016/2859
-
-DINESHIKA W. M. R. - EG/2016/2846
-
-RATHNAYAKA R. M. P. M. - EG/2016/2963
